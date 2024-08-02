@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <div class="imagem">
+        <img src="./img/login.png">
+    </div>
+    <div class="container">
+        <div class="login">
+            <div class="texto"> 
+                <h2>Restic36</h2>
+                <h1>Trilha 2 - FullStack</h1>
+            </div>
+            <div id="buttons-login">
+                <button id="btn-open" class="btn-inactive" onclick="transitionForm()">Entrar</button>
+                <button id="btn-register" class="btn-active" onclick="transitionForm()">Inscrição</button>
+            </div>
+            <form id="form-login" class="form" action="#" method="post">
+                <input type="email" id="email" placeholder="exemplo@email.com" name="email" required>
+                <input type="password" id="senha" placeholder="Senha" name="senha" required>
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+            <form id="form-register" class="form hidden" action="#" method="post">
+                <input type="nome" id="nome" placeholder="Nome" name="nome" required>
+                <input type="email" id="email" placeholder="Email" name="email" required>
+                <input type="password" id="senha" placeholder="Senha" name="senha" required>
+                <input type="password" id="confirmar-senha" placeholder="Confirme a senha" name="confirmar-senha" required>
+                <button type="submit" class="btn-entrar">Entrar</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/transitions.js"></script>
+</body>
+</html>
